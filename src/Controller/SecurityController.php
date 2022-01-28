@@ -18,4 +18,17 @@ class SecurityController extends AbstractController
             'path' => 'src/Controller/SecurityController.php',
         ]);
     }
+
+    /**
+     * @Route("/register", name="register")
+     */
+    public function register(): Response
+    {
+        return $this->json([
+            'message' => 'Welcome to your new controller!',
+            'path' => 'src/Controller/SecurityController.php',
+        ]);
+    }
+
+
 }
